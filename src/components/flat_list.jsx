@@ -4,8 +4,7 @@ import Card from './card'
 
 class FlatList extends Component {
   renderList = () => {
-    console.log(this.props.flats)
-    return this.props.flats.map((flat, idx) => <Card flat={flat} key={idx} /> );
+    return this.props.flats.map((flat, idx) => <Card flat={flat} key={idx} selectFlat={this.props.selectFlat}/> );
   }
 
 
